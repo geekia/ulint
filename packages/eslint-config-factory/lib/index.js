@@ -6,11 +6,15 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
+    "plugin:prettier/recommended",
     "prettier"
   ],
   rules: {
-
-    "no-console":"error"
+    "prettier/prettier": "error",
+    "prefer-const": ["error", { destructuring: "all" }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-console":"error",
   },
   // 启用的环境
   env: {
@@ -23,7 +27,14 @@ module.exports = {
     "hooks"
   ],
   overrides: [
+    {
+      files: ["**/**/*.js",""],
 
+    },
+    {
+      files: ["**/**/*.ts",""],
+
+    }
   ]
 }
 
