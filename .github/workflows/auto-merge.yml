@@ -27,4 +27,4 @@ jobs:
         with:
           command: merge
           target: minor
-          github-token: ${{ secrets.GH_TOKEN }} #这里填写你的 GitHub Token ，申请方式自己搜一下即可
+          github-token: ${{ secrets.MY_TOKEN }} #这里填写你的 GitHub Token ，申请方式自己搜一下即可
