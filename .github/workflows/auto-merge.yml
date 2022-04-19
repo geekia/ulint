@@ -23,8 +23,7 @@ jobs:
             !~/cache/exclude
             **/node_modules
           key: npm-${{ runner.os }}-${{ hashFiles('package.json') }}
-      - uses: ahmadnassri/action-dependabot-auto-merge@v2 #这里调用这个 action，具体原理是自动用你的账号发一条`dependabot merge` 命令。其实我觉得有更好的方案，那就是自动 rebase PR，但暂时没找到，日后会继续找下有没有这样的方案
+      - uses: KeisukeYamashita/auto-pull-request-merge@v1 #这里调用这个 action，具体原理是自动用你的账号发一条`dependabot merge` 命令。其实我觉得有更好的方案，那就是自动 rebase PR，但暂时没找到，日后会继续找下有没有这样的方案
         with:
-          command: merge
-          target: minor
-          github-token: ${{ secrets.MY_TOKEN }} #这里填写你的 GitHub Token ，申请方式自己搜一下即可
+          strategy: rebase
+          token: ${{ secrets.MY_TOKEN }} #这里填写你的 GitHub Token ，申请方式自己搜一下即可
