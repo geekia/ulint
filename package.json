@@ -7,6 +7,10 @@
   "devDependencies": {
     "lerna": "^4.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jeft224/ulint.git"
+  },
   "dependencies": {
     "@babel/core": "^7.17.12",
     "@babel/eslint-parser": "^7.17.0"

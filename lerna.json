@@ -10,7 +10,6 @@
       "npmClient": "npm",
       "allowBranch": ["main"],
       "verifyAccess": false,
-      "access": "public",
       "message": "chore(release): publish",
       "registry": "https://registry.npmjs.org"
     }
