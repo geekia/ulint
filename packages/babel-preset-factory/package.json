@@ -10,10 +10,20 @@
     "lib": "lib",
     "test": "__tests__"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jeft224/ulint.git"
+  },
   "files": [
     "lib"
   ],
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.17.12",
+    "@babel/preset-env": "^7.17.12",
+    "@babel/preset-react": "^7.17.12",
+    "@babel/preset-typescript": "^7.17.12"
   }
 }
