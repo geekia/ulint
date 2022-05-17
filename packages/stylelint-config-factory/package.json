@@ -1,5 +1,5 @@
 {
-  "name": "stylelint-config-factory",
+  "name": "@ulint/stylelint-config-factory",
   "version": "0.1.0",
   "description": "> TODO: description",
   "author": "abert <1248824453@qq.com>",
