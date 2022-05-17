@@ -1,5 +1,5 @@
 {
-  "name": "commitlint-config-factory",
+  "name": "@ulint/commitlint-config-factory",
   "version": "0.1.0",
   "description": "> TODO: description",
   "author": "abert <1248824453@qq.com>",
