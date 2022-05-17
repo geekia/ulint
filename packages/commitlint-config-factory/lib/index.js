@@ -7,7 +7,6 @@ module.exports = {
       2,
       'always',
       [
-        'WIP',
         'feat',
         'fix',
         'style',

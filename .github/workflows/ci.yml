@@ -42,8 +42,8 @@ jobs:
         key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
         restore-keys: |
           ${{ runner.os }}-yarn-
-    - id: publish-from-tags
-      uses: mathieudutour/github-tag-action@v6.0
+    - id: next-publish-from-tags
+      uses: easyops-cn/actions-next-publish-from-tags@master
       with:
-        github_token: ${{ secrets.MY_TOKEN }}
+        npm-token: ${{ secrets.MY_TOKEN }}
       if: github.event_name == 'push'
