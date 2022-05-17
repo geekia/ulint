@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git@github.com:jeft224/ulint.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "directories": {
     "lib": "lib",
     "test": "__tests__"
