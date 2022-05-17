@@ -27,13 +27,36 @@ module.exports = {
     "hooks"
   ],
   overrides: [
+    // 用于test文件
     {
-      files: ["**/**/*.js",""],
-
+      files: [
+        "**/__jest__/**/*.{js,ts,jsx,tsx}",
+        "**/__mocks__/**/*.{js,ts,jsx,tsx}",
+        "*.spec.{js,ts,jsx,tsx}",
+      ],
+      env: {
+        jest: true,
+      },
+      rules: {
+        "@typescript-eslint/ban-ts-comment": [
+          "warn",
+          {
+            "ts-ignore": "allow-with-description",
+          },
+        ],
+      },
     },
+    // 只处理 js 和 jsx 文件
     {
-      files: ["**/**/*.ts",""],
-
+      files: ["**/*.{js,jsx}"], 
+      parser: "@babel/eslint-parser", // 使用 babel 来解析 js 文件
+      parserOptions: {
+        sourceType: "module", // 支持 import/export
+        allowImportExportEverywhere: false,
+        ecmaFeatures: {
+          globalReturn: false,
+        },
+      },
     }
   ]
 }
