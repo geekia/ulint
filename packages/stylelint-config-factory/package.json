@@ -26,7 +26,7 @@
     "stylelint": "^14.7.1",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended-less": "^1.0.4",
-    "stylelint-config-standard": "^25.0.0",
+    "stylelint-config-standard": "^26.0.0",
     "stylelint-less": "^1.0.5",
     "stylelint-prettier": "^2.0.0"
   }
